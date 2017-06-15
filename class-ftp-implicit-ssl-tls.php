@@ -7,7 +7,7 @@
  *
  * @category    Class
  * @author      Max Rice / Damith Jayasinghe
- * @since       1.1.0
+ * @since       1.1.1
  */
 class FTP_Implicit_SSL {
 
