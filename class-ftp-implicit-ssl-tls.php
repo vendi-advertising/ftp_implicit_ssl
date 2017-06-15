@@ -7,7 +7,7 @@
  *
  * @category    Class
  * @author      Max Rice / Damith Jayasinghe
- * @since       1.0
+ * @since       1.1.0
  */
 class FTP_Implicit_SSL {
 
@@ -144,6 +144,7 @@ class FTP_Implicit_SSL {
 		curl_setopt( $this->curl_handle, CURLOPT_FOLLOWLOCATION, 1);
 		curl_setopt( $this->curl_handle, CURLOPT_RETURNTRANSFER, 1);
 		curl_setopt( $this->curl_handle, CURLOPT_FILE, $file);
+		curl_setopt( $this->curl_handle, CURLOPT_CUSTOMREQUEST, "RETR $file_name" );
 
 		$result = curl_exec($this->curl_handle);
 		fclose($file);
