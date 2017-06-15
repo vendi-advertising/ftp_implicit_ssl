@@ -4,6 +4,7 @@
     "version" : "1.0.0",
     "description": "Simple wrapper for cURL functions to transfer an ASCII file over FTP with implicit SSL/TLS",
     "homepage": "https://github.com/vendi-advertising/ftp_implicit_ssl",
+    "license": "MIT",
     "authors": [
         {
             "name": "Max Rice",
